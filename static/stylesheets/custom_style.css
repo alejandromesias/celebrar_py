@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'AmarilloFont';
+  src: url('../mvfonts/Amarillo.ttf');
+
+}
+
+.test{
+  font-family: 'AmarilloFont';
+  background-color: blue;
+}

@@ -27,7 +27,7 @@ SECRET_KEY = 'm@n26z(5w$5a+gexa*^mbocnlgecfows#5s2))*i-e_o45n-9)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['celebrarproject.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -121,6 +121,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     STATIC_DIR,
+    #STATIC_ROOT,
 ]
