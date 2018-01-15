@@ -3,4 +3,5 @@ from nicoyvaleapp import views
 
 urlpatterns = [
     url(r'^$', views.index, name ='index'),
+    url(r'^modelo', views.modelo, name ='modelo'),
 ]
