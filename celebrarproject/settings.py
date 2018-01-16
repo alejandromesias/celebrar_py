@@ -27,7 +27,7 @@ SECRET_KEY = 'm@n26z(5w$5a+gexa*^mbocnlgecfows#5s2))*i-e_o45n-9)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['celebrarproject.pythonanywhere.com','127.0.0.1']
+ALLOWED_HOSTS = ['celebrarproject.pythonanywhere.com','127.0.0.1', 'www.celebrar.vip']
 
 
 # Application definition
