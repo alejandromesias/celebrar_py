@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'AmarilloFont';
+  src: url('../mvfonts/Amarillo.ttf');
+}
+
+
+#mainNav .navbar-brand-nyv {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.3;
+  color: #ffffff;
+  font-family: 'AmarilloFont', Georgia, Arial;
+}
+
+#mainNav .navbar-brand-nyv:focus, #mainNav .navbar-brand-nyv:hover {
+  color: #ffe5d5;
+}

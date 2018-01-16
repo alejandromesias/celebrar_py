@@ -71,18 +71,25 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #212529; }
 
+:root {
+  --first-color: #488cff;
+  --azul: #3b5c9b;
+}
+
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+}
   #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
     color: #F05F40;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #f05f40; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -119,7 +126,7 @@ body {
           color: #fff; }
       #mainNav.navbar-shrink {
         border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-        background-color: #fff; }
+        background-color: var(--azul); }
         #mainNav.navbar-shrink .navbar-brand {
           color: #F05F40; }
           #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
@@ -134,7 +141,7 @@ body {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/portada.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
