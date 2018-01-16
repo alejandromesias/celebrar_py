@@ -14,18 +14,18 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #F05F40; }
+  border-color: var(--melon); }
 
 hr.light {
   border-color: #fff; }
 
 a {
-  color: #F05F40;
+  color: var(--melon);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:hover {
-    color: #f05f40; }
+    color: var(--melon); }
 
 h1,
 h2,
@@ -36,7 +36,7 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 .bg-primary {
-  background-color: #F05F40 !important; }
+  background-color: var(--melon) !important; }
 
 .bg-dark {
   background-color: #212529 !important; }
@@ -71,25 +71,41 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #212529; }
 
-/*barra de navegacion*/
+/*BARRA DE NAVEGACION*/
 
 /* almacenamiento de colores*/
 :root {
   --azul: #3b5c9b;
+  --melon: #F4b897;
   --logo_full: rgba(255, 255, 255, 0.8);
-  --logo_scroll: #fff
+  --logo_scroll: #fff;
+  --text_bar_full: rgba(255, 255, 255, 0.8);
+  --text_bar_scroll: #fff;
 }
 
 /* custom fonts */
 @font-face {
   font-family: 'AmarilloFont';
   src: url('../mvfonts/Amarillo.ttf');
+  src: url('../mvfonts/Amarillo.otf');
 }
+
+@font-face {
+  font-family: 'ChampFont';
+  src: url('../mvfonts/Champ.ttf');
+}
+
+@font-face {
+  font-family: 'ChampBoldFont';
+  src: url('../mvfonts/ChampBold.ttf');
+}
+
+/*Modo General y movil*/
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: var(--azul);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'ChampFont', Tahoma ;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -104,26 +120,27 @@ body {
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #f05f40;
+  color: var(--melon);
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    font-size: .9rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #212529;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: ;
+    color: var(--text_bar_full);
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-      color: #F05F40;
+      color: var(--melon);
 
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-      color: #F05F40 !important;
+      color: var(--melon) !important;
       background-color: transparent;
 }
 
@@ -131,6 +148,29 @@ body {
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
         background-color: transparent;
 }
+
+#mainNav .navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+
+}
+
+#mainNav .navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url('../icons/menu.png');
+}
+
+/*Modo pantalla amplia*/
 
 @media (min-width: 992px) {
     #mainNav {
@@ -172,17 +212,17 @@ body {
     }
 
     #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-            color: #f05f40;
+            color: var(--melon);
     }
 
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-          color: #212529;
+          color: var(--text_bar_scroll);
     }
 
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-            color: #F05F40;
+            color: var(--melon);
     }
   }
 
@@ -265,7 +305,7 @@ header.masthead {
       font-size: 22px; } }
 
 .text-primary {
-  color: #F05F40 !important; }
+  color: var(--melon) !important; }
 
 .btn {
   font-weight: 700;
@@ -278,8 +318,8 @@ header.masthead {
   padding: 1rem 2rem; }
 
 .btn-primary {
-  background-color: #F05F40;
-  border-color: #F05F40; }
+  background-color: var(--melon);
+  border-color: var(--melon); }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     color: #fff;
     background-color: #ee4b28 !important; }
