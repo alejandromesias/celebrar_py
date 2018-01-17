@@ -9,7 +9,7 @@ def home(request):
     historia_parr2 = "Aunque en ese momento el destino nos separó, 4 años más tarde nuestras vidas eran distintas y al encontrarnos nuevamente comenzó ésta historia. Desde ahí hemos caminado juntos, viviendo momentos únicos, aceptando quienes somos y apoyándonos en cada decisión."
     historia_parr3 = "Hace 7 meses decidimos juntar nuestras vidas para siempre y nos embarcamos en esta nueva aventura, con más retos y objetivos comunes. Estamos felices de poder compartir el inicio de ésta etapa junto a quienes más queremos."
 
-    context_dic = {'marquesina': marquesina,
+    context_dic = {'marquesina': "testing",
                 'historia_parr1': historia_parr1,
                 'historia_parr2': historia_parr2,
                 'historia_parr3': historia_parr3,}
