@@ -3,5 +3,4 @@ from nicoyvaleapp import views
 
 urlpatterns = [
     url(r'^$', views.home, name ='home'),
-    url(r'^modelo', views.modelo, name ='modelo'),
 ]

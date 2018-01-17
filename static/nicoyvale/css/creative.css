@@ -3,6 +3,33 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
+ /* almacenamiento de colores*/
+ :root {
+   --azul: #3b5c9b;
+   --melon: #F4b897;
+   --logo_full: rgba(255, 255, 255, 0.8);
+   --logo_scroll: #fff;
+   --text_bar_full: rgba(255, 255, 255, 0.8);
+   --text_bar_scroll: #fff;
+ }
+
+ /* custom fonts */
+ @font-face {
+   font-family: 'AmarilloFont';
+   src: url('../mvfonts/Amarillo.ttf');
+   src: url('../mvfonts/Amarillo.otf');
+ }
+
+ @font-face {
+   font-family: 'ChampFont';
+   src: url('../mvfonts/Champ.ttf');
+ }
+
+ @font-face {
+   font-family: 'ChampBoldFont';
+   src: url('../mvfonts/ChampBold.ttf');
+ }
+
 body,
 html {
   width: 100%;
@@ -73,38 +100,14 @@ body {
 
 /*BARRA DE NAVEGACION*/
 
-/* almacenamiento de colores*/
-:root {
-  --azul: #3b5c9b;
-  --melon: #F4b897;
-  --logo_full: rgba(255, 255, 255, 0.8);
-  --logo_scroll: #fff;
-  --text_bar_full: rgba(255, 255, 255, 0.8);
-  --text_bar_scroll: #fff;
-}
 
-/* custom fonts */
-@font-face {
-  font-family: 'AmarilloFont';
-  src: url('../mvfonts/Amarillo.ttf');
-  src: url('../mvfonts/Amarillo.otf');
-}
-
-@font-face {
-  font-family: 'ChampFont';
-  src: url('../mvfonts/Champ.ttf');
-}
-
-@font-face {
-  font-family: 'ChampBoldFont';
-  src: url('../mvfonts/ChampBold.ttf');
-}
 
 .marquesina {
     font-family: 'ChampFont', Tahoma ;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.5px;
+    color: var(--logo_full);
 }
 
 /*Modo General y movil*/
@@ -231,12 +234,6 @@ body {
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: var(--melon);
     }
-  }
-
-.vbottom{
-      position: relative;
-      top: 100%;
-      transform: translateY(-100%);
   }
 
 

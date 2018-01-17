@@ -16,10 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
-from nicoyvaleapp import views
 
 urlpatterns = [
-    url(r'^$', views.intro, name ='celebrar_home'),
+    url(r'^$', include('celebrarvip.urls')),
     url(r'^nicoyvale/', include('nicoyvaleapp.urls')),
     url(r'^admin/', admin.site.urls),
 ]
