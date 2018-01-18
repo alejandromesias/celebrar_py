@@ -6,12 +6,12 @@ from django.http import HttpResponse
 def home(request):
     marquesina = "3 de marzo de 2018"
     historia_parr1 = "Hay veces en la vida donde las cosas buenas llegan sin avisar y cuando menos lo esperas. Nos pasó a nosotros. Nos conocimos hace casi 9 años, pero en ese tiempo cada uno tenía un rumbo diferente... "
-    historia_parr2 = "Aunque en ese momento el destino nos separó, 4 años más tarde nuestras vidas eran distintas y al encontrarnos nuevamente comenzó ésta historia. Desde ahí hemos caminado juntos, viviendo momentos únicos, aceptando quienes somos y apoyándonos en cada decisión."
+    historia_parr2 = "Aunque en ese momento el destino nos separó, 4 años más tarde nuestras vidas eran distintas y al encontrarnos nuevamente comenzó esta historia. Desde ahí hemos caminado juntos, viviendo momentos únicos, aceptando quienes somos y apoyándonos en cada decisión."
     historia_parr3 = "Hace 7 meses decidimos juntar nuestras vidas para siempre y nos embarcamos en esta nueva aventura, con más retos y objetivos comunes. Estamos felices de poder compartir el inicio de ésta etapa junto a quienes más queremos."
 
     nombre_ceremonia = "Parroquia La Sagrada Familia del Condado"
     direccion_ceremonia = 'Gonzalo Cordero S/N y Ricardo Descalzi, Urb. "El Condado", Quito'
-    hora_ceremonia = "Sábado 3  de marzo, 12h00"
+    hora_ceremonia = "Sábado 3  de marzo, 11h30"
 
     nombre_recepcion = "Hacienda Villa Vieja"
     direccion_recepcion = "Juan Procel y José Miguel Carrión, sector El Condado"

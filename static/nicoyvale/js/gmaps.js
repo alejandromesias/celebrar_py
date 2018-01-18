@@ -5,7 +5,10 @@
 
       var mapOtions = {
         zoom: 16,
-        center: recepcion_coord
+        minZoom: 13,
+        maxZoom: 17,
+        center: recepcion_coord,
+
       }
 
       var mapCanvas = document.getElementById('map');

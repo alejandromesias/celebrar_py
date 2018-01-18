@@ -121,8 +121,8 @@ body {
 
 .marquesina {
     font-family: 'ChampFont', Tahoma ;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 400;
     letter-spacing: 1.5px;
     color: var(--papiroFade);
 }
@@ -225,7 +225,7 @@ body {
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-          color: var(--melon);
+          color: var(--melonFade);
     }
 
     /*color de la barra al hacer scroll*/
