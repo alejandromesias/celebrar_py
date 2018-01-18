@@ -30,6 +30,13 @@
    src: url('../mvfonts/ChampBold.ttf');
  }
 
+/*estilo para el mapa*/
+ #map {
+   width: 100%;
+   height: 400px;
+   background-color: grey;
+ }
+
 body,
 html {
   width: 100%;
