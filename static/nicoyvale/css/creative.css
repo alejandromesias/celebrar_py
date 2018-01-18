@@ -6,11 +6,14 @@
  /* almacenamiento de colores*/
  :root {
    --azul: #3b5c9b;
-   --melon: #F4b897;
-   --logo_full: rgba(255, 255, 255, 0.8);
-   --logo_scroll: #fff;
-   --text_bar_full: rgba(255, 255, 255, 0.8);
-   --text_bar_scroll: #fff;
+   --melon: #ffb387;
+   --papiro: #fff4e0;
+   --blanco: #fff;
+
+   --azulFade: rgba(59,92,155,0.9);
+   --melonFade: rgba(244,179,135,0.9);
+   --papiroFade: rgba(255,244,244,0.9);
+   --blancoFade: rgba(255,255,255,0.@);
  }
 
  /* custom fonts */
@@ -51,7 +54,7 @@ hr {
   border-color: var(--melon); }
 
 hr.light {
-  border-color: #fff; }
+  border-color: var(--azul); }
 
 a {
   color: var(--melon);
@@ -59,7 +62,7 @@ a {
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:hover {
-    color: var(--melon); }
+    color: var(--azul); }
 
 h1,
 h2,
@@ -70,13 +73,13 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 .bg-primary {
-  background-color: var(--melon) !important; }
+  background-color: var(--papiro) !important; }
 
 .bg-dark {
-  background-color: var(--azul) !important; }
+  background-color: var(--melon) !important; }
 
 .text-faded {
-  color: rgba(255, 255, 255, 0.8); }
+  color: var(--papiroFade); }
 
 section {
   padding: 8rem 0; }
@@ -86,14 +89,19 @@ section {
   color: var(--azul);
  }
 
+ .section-heading-light {
+   margin-top: 0;
+   color: var(--melon);
+  }
+
 ::-moz-selection {
   color: #fff;
-  background: #212529;
+  background: var(--melon);
   text-shadow: none; }
 
 ::selection {
   color: #fff;
-  background: #212529;
+  background: var(--melon);
   text-shadow: none; }
 
 img::selection {
@@ -105,7 +113,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #212529; }
+  -webkit-tap-highlight-color: var(--melon); }
 
 /*BARRA DE NAVEGACION*/
 
@@ -116,14 +124,14 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.5px;
-    color: var(--logo_full);
+    color: var(--papiroFade);
 }
 
 /*Modo General y movil*/
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: var(--azul);
+  background-color: var(--melonFade);
   font-family: 'ChampFont', Tahoma ;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -134,12 +142,12 @@ body {
 #mainNav .navbar-brand {
   font-weight: 400;
   text-transform: ;
-  color: var(--logo_scroll);
+  color: var(--papiro);
   font-family: 'AmarilloFont', Georgia, Arial;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: var(--melon);
+  color: var(--azul);
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -148,18 +156,18 @@ body {
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: ;
-    color: var(--text_bar_full);
+    color: var(--papiro);
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-      color: var(--melon);
+      color: var(--azul);
 
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-      color: var(--melon) !important;
+      color: var(--azul) !important;
       background-color: transparent;
 }
 
@@ -199,11 +207,11 @@ body {
 
     /* Logo en modo full-screen*/
     #mainNav .navbar-brand {
-        color: var(--logo_full);
+        color: var(--papiroFade);
     }
 
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-          color: #fff;
+          color: var(--melon);
     }
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link {
@@ -212,36 +220,36 @@ body {
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-        color: rgba(255, 255, 255, 0.7);
+        color: var(--papiroFade);
     }
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-          color: #fff;
+          color: var(--melon);
     }
 
     /*color de la barra al hacer scroll*/
     #mainNav.navbar-shrink {
         border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-        background-color: var(--azul);
+        background-color: var(--melonFade);
     }
 
     #mainNav.navbar-shrink .navbar-brand {
-          color: var(--logo_scroll);
+          color: var(--papiro);
     }
 
     #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-            color: var(--melon);
+            color: var(--azul);
     }
 
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-          color: var(--text_bar_scroll);
+          color: var(--papiro);
     }
 
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-            color: var(--melon);
+            color: var(--azul);
     }
   }
 
