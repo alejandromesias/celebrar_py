@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "nicoyvaleapp/base_comun.html" %}
+{% load staticfiles %}
+
+  {% block page_block %}
+    <div class="test">
+      <h1>For nico y vale</h1>
+      <p>{{inserted_text}}</p>
+      <img src="{% static "nicoyvale/img/iglesia_condado.jpg" %}" alt="error de imagen">
+    </div>
+  {% endblock %}

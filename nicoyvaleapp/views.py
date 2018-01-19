@@ -32,6 +32,11 @@ def home(request):
                 }
     return render(request, 'nicoyvaleapp/nyv_home.html', context = context_dic)
 
+def confirmar_page(request):
+    context = {'inserted_text': "hola es la pagina de confirmar"}
+    return render(request, 'nicoyvaleapp/confirmar_page.html', context = context)
+
 def index(request):
+
     text = {'inserted_text': "hola texto insertadoss"}
     return render(request, 'nicoyvaleapp/index.html', context = text)
