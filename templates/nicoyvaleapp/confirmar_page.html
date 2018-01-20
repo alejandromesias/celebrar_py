@@ -35,22 +35,23 @@
   <section class="bg-primary" id="formulario">
     <div class="container">
 
-        <div class="col-lg-8 mx-auto text-center">
+        <div class="col-lg-12 mx-auto text-center">
           <h2 class="section-heading-light">Formulario</h2>
           <hr class="light my-4">
           <p class= " mb-4">
             {{instrucciones1}}
             <br><br>
-            {{agradecimiento}}
-          </p>
-
-            <iframe class="col-lg-8" src="https://docs.google.com/forms/d/e/1FAIpQLSc0O7iBLyJcJjA1VrNGAnC5owxyg6qF7htavAqOFTJa7WldIA/viewform?embedded=true" width="320" height="900" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Cargando...</iframe>
-          <p class= " mb-4">
             {{instrucciones2}}
             <strong>{{email}}</strong>
             <br><br>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="{% url 'home' %}">Regresar al inicio</a>
+            {{agradecimiento}}
           </p>
+
+            <iframe class="col-lg-12" src="https://docs.google.com/forms/d/e/1FAIpQLSc0O7iBLyJcJjA1VrNGAnC5owxyg6qF7htavAqOFTJa7WldIA/viewform?embedded=true" width="420" height="1000" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto">Cargando...</iframe>
+
+
+            <!--<a class="btn btn-primary btn-xl js-scroll-trigger" href="{% url 'home' %}">Regresar al inicio</a>
+            -->
 
           </div>
         </div>
