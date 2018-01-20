@@ -33,7 +33,19 @@ def home(request):
     return render(request, 'nicoyvaleapp/nyv_home.html', context = context_dic)
 
 def confirmar_page(request):
-    context = {'inserted_text': "hola es la pagina de confirmar"}
+
+    marquesina = "Confirmación de Asistencia"
+    instrucciones1 = "Por favor llena el siguiente formulario para confirmar tu asistencia de forma rápida y directa. "
+    instrucciones2 = "Alternativamente si deseas puedes escribir un e-mail con tu confirmación a la dirección"
+    email = "nickovivar@gmail.com"
+    agradecimiento = "Nicolás y Valeria agradecen tu gentileza."
+    context = {'marquesina': marquesina,
+                'instrucciones1':instrucciones1,
+                'instrucciones2':instrucciones2,
+                'email': email,
+                'agradecimiento' : agradecimiento,
+                }
+
     return render(request, 'nicoyvaleapp/confirmar_page.html', context = context)
 
 def index(request):

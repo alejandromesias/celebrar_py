@@ -3,9 +3,57 @@
 {% load staticfiles %}
 
   {% block page_block %}
-    <div class="test">
-      <h1>For nico y vale</h1>
-      <p>{{inserted_text}}</p>
-      <img src="{% static "nicoyvale/img/iglesia_condado.jpg" %}" alt="error de imagen">
+  <header class="masthead-2 text-center text-white d-flex">
+    <div class="container my-auto">
+      <div class="row">
+<!--
+        <div class="col-lg-10 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>gff</strong>
+          </h1>
+          <hr>
+        </div>
+      -->
+<!--
+        <div class="col-lg-8 mx-auto">
+          <p class="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+        </div>
+  -->
+      <div class="col-8 mx-auto">
+        <p class="marquesina mb-0">
+          <br><br><br><br>
+          {{marquesina}}
+        </p>
+      </div>
+
+      </div>
     </div>
+  </header>
+
+  <!-- <section class="bg-primary" id="about"> -->
+  <section class="bg-primary" id="formulario">
+    <div class="container">
+
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading-light">Formulario</h2>
+          <hr class="light my-4">
+          <p class= " mb-4">
+            {{instrucciones1}}
+            <br><br>
+            {{agradecimiento}}
+          </p>
+
+            <iframe class="col-lg-8 mx-auto" src="https://docs.google.com/forms/d/e/1FAIpQLSc0O7iBLyJcJjA1VrNGAnC5owxyg6qF7htavAqOFTJa7WldIA/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
+          <p class= " mb-4">
+            {{instrucciones2}}
+            <strong>{{email}}</strong>
+          </p>
+
+          </div>
+        </div>
+
+    </div>
+  </section>
+
   {% endblock %}

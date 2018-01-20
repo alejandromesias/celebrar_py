@@ -40,31 +40,29 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#historia">Historia</a>
+              <a class="nav-link js-scroll-trigger" href="{% url 'home' %}#historia">Historia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#ceremonia">Ceremonia</a>
+              <a class="nav-link js-scroll-trigger" href="{% url 'home' %}#ceremonia">Ceremonia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#recepcion">Recepción</a>
+              <a class="nav-link js-scroll-trigger" href="{% url 'home' %}#recepcion">Recepción</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#mapas">Mapa</a>
+              <a class="nav-link js-scroll-trigger" href="{% url 'home' %}#mapas">Mapa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#confirmar">Confirmar</a>
+              <a class="nav-link js-scroll-trigger" href="{% url 'confirmar' %}">Confirmar asistencia</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- paginas individuales -->
-    <div class = container>
     {% block page_block %}
 
     {% endblock %}
     <!--fin paginas individuales -->
-  </div>
   </body>
 
   <!-- Bootstrap core JavaScript -->
