@@ -144,7 +144,7 @@ body {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: var(--melonFade);
-  font-family: 'ChampFont', Tahoma ;
+  font-family: 'ChampBoldFont', Tahoma ;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -402,3 +402,8 @@ header.masthead {
     background-color: #ee4b28 !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
+
+.padded-div {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
