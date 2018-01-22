@@ -1,7 +1,7 @@
 
   function initMap() {
       var recepcion_coord = {lat: -0.105258, lng: -78.503670};
-      var ceremonia_coord = {lat: -0.103265, lng: -78.500863};
+      var ceremonia_coord = {lat: -0.103386, lng: -78.500677};
 
       var mapOtions = {
         zoom: 16,
