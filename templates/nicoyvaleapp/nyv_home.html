@@ -32,18 +32,21 @@
       </div>
     </header>
 
-    <div class="container padded-div">
+  <section class="padded-section">
+    <div class="container">
         <div class="col-lg-8 mx-auto text-center">
 
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="{% url 'confirmar' %}">Confirma tu asistencia</a>
 
         </div>
     </div>
+  </section>
 
-
-      <div class="container padded-div" id="ceremonia">
+    <section class="padded-section">
+      <div class="container " id="ceremonia">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
+            <img class = "img-fluid" src="{% static "nicoyvale/img/flores.png" %}" width="340" alt="imagen flores">
             <h2 class="section-heading-light">Ceremonia</h2>
             <hr class="light my-4">
             <p class= " mb-4">
@@ -57,6 +60,7 @@
           </div>
         </div>
       </div>
+    </section>
 
 
 
@@ -65,9 +69,11 @@
 
 
     <!-- <section class="bg-primary" id="about"> -->
-      <div class="container padded-div" id="recepcion">
+    <section class = "padded-section bg-primary">
+      <div class="container" id="recepcion">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
+            <img class = "img-fluid" src="{% static "nicoyvale/img/flores.png" %}" width="340" alt="imagen flores">
             <h2 class="section-heading text-darkTitle ">Recepción</h2>
             <hr class="my-4">
             <p class= "mb-4">
@@ -84,21 +90,27 @@
           </div>
         </div>
       </div>
+    </section>
+
 
 
     <!-- <section class="bg-primary" id="about"> -->
+    <section class="padded-section">
       <div class="container padded-div" id="mapas">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
+            <img class = "img-fluid" src="{% static "nicoyvale/img/flores.png" %}" width="340" alt="imagen flores">
             <h2 class="section-heading text-darkTitle ">Mapa</h2>
             <hr class="my-4">
             <div id="map"></div>
           </div>
         </div>
       </div>
+    </section>
 
 
           <!-- carrusel -->
+    <section class= "padded-section bg-primary">
 
       <div class = "container padded-div">
 
@@ -136,12 +148,14 @@
       </div>
 
       </div>
+    </section>  
 
 
-
+    <section class="padded-section bg-primary">
       <div class="container padded-div" id="historia">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
+            <img class = "img-fluid" src="{% static "nicoyvale/img/flores.png" %}" width="340" alt="imagen flores">
             <h2 class="section-heading text-darkTitle ">Nuestra Historia</h2>
             <hr class="my-4">
             <p class= "mb-4">
@@ -153,6 +167,7 @@
           </div>
         </div>
       </div>
+    </section>
 
 
   {% endblock %}

@@ -403,7 +403,12 @@ header.masthead {
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
 
-.padded-div {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.padded-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.padded-section-less {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
