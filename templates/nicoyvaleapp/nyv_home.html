@@ -81,7 +81,7 @@
               {{nombre_recepcion}}<br><br>
               {{direccion_recepcion}}<br><br>
               {{hora_recepcion}}<br><br>
-              <a clas="nav-link" target="_blank" href="{{web_recepcion}}">{{web_recepcion}}</a>
+              <a clas="nav-link" target="blank" href="{{web_recepcion}}">{{web_recepcion}}</a>
             </p>
             <img class = "img-fluid rounded-circle" src="{% static "nicoyvale/img/villavieja.jpg" %}" alt="imagen recepcion">
             <br>
@@ -102,6 +102,10 @@
             <h2 class="section-heading text-darkTitle ">Mapa</h2>
             <hr class="my-4">
             <div id="map"></div>
+            <!--<p>
+              <a href="https://waze.com/ul?ll='+recepcion_coord.lat+','+recepcion_coord.lng+'" target="blank" class="btn btn-primary">Navegar a la ceremonia con Waze</a>
+              <a href="https://waze.com/ul?ll='+recepcion_coord.lat+','+recepcion_coord.lng+'" target="blank" class="btn btn-primary">Navegar a la recepción con Waze</a>
+            </p> -->
           </div>
         </div>
       </div>
