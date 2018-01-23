@@ -44,8 +44,8 @@
   <section class="padded-section-less bg-image">
     <div class="container">
         <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading-light" id="demo"></h2>
-          <h2 class="section-heading-light">para nuestra boda</h2>
+          <h3 class="section-heading-light" id="demo"></h3>
+          <h3 class="section-heading-light">para nuestra boda</h3>
           <br><br>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="{% url 'confirmar' %}">Confirma tu asistencia</a>
           <br><br>
@@ -55,9 +55,9 @@
   </section>
 
   <!-- carrusel -->
-<section class= "padded-section bg-primary">
+<section class= "padded-section-less bg-primary">
 
-<div class = "container padded-div">
+<div class = "container">
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2700">
 <ol class="carousel-indicators">
@@ -93,22 +93,28 @@
   <span class="sr-only">Next</span>
 </a>
 </div>
-
+  <div class="col-lg-8 mx-auto text-center">
+    <br>
+  <img class = "img-fluid" src="{% static "nicoyvale/img/flores.png" %}" width="250" alt="imagen flores">
+  </div>
 </div>
+
 </section>
 
 
-    <section class="padded-section">
-      <div class="container" id="ceremonia">
+    <section class="padded-section" id="ceremonia">
+      <div class="container" >
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <img class = "img-fluid" src="{% static "nicoyvale/img/flores.png" %}" width="340" alt="imagen flores">
+
             <h2 class="section-heading-light">Ceremonia</h2>
             <hr class="light my-4">
             <p class= " mb-4">
               {{nombre_ceremonia}}<br><br>
+              {{hora_ceremonia}}<br><br>
               {{direccion_ceremonia}}<br><br>
-              {{hora_ceremonia}}
+              <a class="btn btn-primary" href="#mapas">Ver mapa</a>
+
             </p>
             <img class = "img-fluid rounded-circle" src="{% static "nicoyvale/img/iglesia_condado.jpg" %}" alt="imagen ceremonia">
 
@@ -121,21 +127,21 @@
 
 
 
-    <!-- <section class="bg-primary" id="about"> -->
 
 
-    <!-- <section class="bg-primary" id="about"> -->
-    <section class = "padded-section bg-primary">
-      <div class="container" id="recepcion">
+
+
+    <section class = "padded-section bg-primary" id="recepcion">
+      <div class="container" >
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <img class = "img-fluid" src="{% static "nicoyvale/img/flores.png" %}" width="340" alt="imagen flores">
             <h2 class="section-heading text-darkTitle ">Recepción</h2>
             <hr class="my-4">
             <p class= "mb-4">
               {{nombre_recepcion}}<br><br>
-              {{direccion_recepcion}}<br><br>
               {{hora_recepcion}}<br><br>
+              {{direccion_recepcion}}<br><br>
+              <a class="btn btn-primary" href="#mapas">Ver mapa</a><br><br>
               <a clas="nav-link" target="blank" href="{{web_recepcion}}">{{web_recepcion}}</a>
             </p>
             <img class = "img-fluid rounded-circle" src="{% static "nicoyvale/img/villavieja.jpg" %}" alt="imagen recepcion">
@@ -149,18 +155,16 @@
 
 
     <!-- <section class="bg-primary" id="about"> -->
-    <section class="padded-section">
-      <div class="container" id="mapas">
+    <section class="padded-section" id="mapas">
+      <div class="container" >
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <img class = "img-fluid" src="{% static "nicoyvale/img/flores.png" %}" width="340" alt="imagen flores">
+
             <h2 class="section-heading text-darkTitle ">Mapa</h2>
             <hr class="my-4">
-            <div id="map"></div>
-            <br>
             <p class= "mb-4">
               <strong>Importante:</strong> Para llegar a la iglesia, se debe ingresar a la urbanización El Condado pero
-              NO por la entrada principal, sino por la <strong> nueva entrada de visitantes </strong> que se encuentra a unos 800 metros de la principal.
+              NO por la entrada principal, sino por la <strong> nueva entrada de visitantes </strong> que se encuentra a 800 metros de la principal, en la calle Río Peripa.
             </p>
 
             <p class= "mb-4">
@@ -169,17 +173,21 @@
             <p class= "mb-4">
               <a class="btn btn-primary" href="https://waze.com/ul?ll={{latitud_recepcion}},{{longitud_recepcion}}" target="blank">Navegar con Waze a la recepcion</a>
             </p>
+
+            <div id="map"></div>
+            <br>
+
           </div>
         </div>
       </div>
     </section>
 
 
-    <section class="padded-section bg-primary">
-      <div class="container padded-div" id="historia">
+    <section class="padded-section bg-primary" id="historia">
+      <div class="container padded-div" >
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <img class = "img-fluid" src="{% static "nicoyvale/img/flores.png" %}" width="340" alt="imagen flores">
+            <img class = "img-fluid" src="{% static "nicoyvale/img/flores.png" %}" width="250" alt="imagen flores">
             <h2 class="section-heading text-darkTitle ">Nuestra Historia</h2>
             <hr class="my-4">
             <p class= "mb-4">

@@ -8,14 +8,14 @@ function place_pin(map,coordenada,titulo,parrafo){
 
   var mensaje = '<div class="info-window">' +
             '<div class="info-content">' +
-            '<h5>'+titulo+'</h5>' +
+            '<h6>'+titulo+'</h6>' +
             '<p>'+parrafo+'</p>'+
             '</div>' +
             '</div>';
 
   var recepcion_window = new google.maps.InfoWindow({
         content: mensaje,
-        maxWidth: 200
+        maxWidth: 160
   });
 
   recepcion_window.open(map, recepcion_marker);
@@ -33,7 +33,7 @@ function place_pin(map,coordenada,titulo,parrafo){
       var entrada_coord = {lat: lat_entrada, lng: lng_entrada};
 
       var mapOtions = {
-        zoom: 16,
+        zoom: 15,
         minZoom: 13,
         maxZoom: 17,
         center: recepcion_coord,
@@ -56,7 +56,7 @@ function place_pin(map,coordenada,titulo,parrafo){
 
       coordenada = entrada_coord;
       titulo = "Nueva Entrada"
-      parrafo = "Entrada para visitantes a la<br>urbanización El Condado"
+      parrafo = "Entrada para visitantes a la<br>urbanización El Condado, calle Río Peripa"
       place_pin(map,coordenada,titulo,parrafo);
 
 
