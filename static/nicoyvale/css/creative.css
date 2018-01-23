@@ -58,7 +58,7 @@ html {
   }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
+  font-family:Verdana, Arial, sans-serif; }
 
 hr {
   max-width: 50px;
@@ -82,8 +82,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'ChampBoldFont',Tahoma, Arial, sans-serif; }
 
+.text-par {
+  color: var(--azul);
+  font-size: 1.2rem;
+  font-family: Tahoma, Helvetica, Verdana;
+}
 
 .bg-primary {
   background-color: var(--papiro) !important; }
@@ -392,11 +397,12 @@ header.masthead {
   color: var(--melon) !important; }
 
 .btn {
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: 2px;
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'ChampBoldFont', 'Helvetica Neue', Arial, sans-serif; }
 
 .btn-xl {
   padding: 1rem 2rem; }
