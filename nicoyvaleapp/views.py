@@ -12,10 +12,14 @@ def home(request):
     nombre_ceremonia = "Parroquia La Sagrada Familia del Condado"
     direccion_ceremonia = 'Gonzalo Cordero S/N y Ricardo Descalzi, Urb. "El Condado", Quito'
     hora_ceremonia = "Sábado 3  de marzo, 11h30"
+    latitud_ceremonia = -0.103386
+    longitud_ceremonia = -78.500677
 
     nombre_recepcion = "Hacienda Villa Vieja"
     direccion_recepcion = "Juan Procel y José Miguel Carrión, sector El Condado"
     hora_recepcion = "3 de marzo, a partir de las 13h00"
+    latitud_recepcion = -0.105258
+    longitud_recepcion = -78.503730
     web_recepcion = "http://haciendavillavieja.com"
 
     context_dic = {'marquesina': marquesina,
@@ -25,9 +29,13 @@ def home(request):
                 'nombre_ceremonia':nombre_ceremonia,
                 'direccion_ceremonia':direccion_ceremonia,
                 'hora_ceremonia':hora_ceremonia,
+                'latitud_ceremonia':latitud_ceremonia,
+                'longitud_ceremonia':longitud_ceremonia,
                 'nombre_recepcion':nombre_recepcion,
                 'direccion_recepcion':direccion_recepcion,
                 'hora_recepcion':hora_recepcion,
+                'latitud_recepcion':latitud_recepcion,
+                'longitud_recepcion':longitud_recepcion,
                 'web_recepcion':web_recepcion,
                 }
     return render(request, 'nicoyvaleapp/nyv_home.html', context = context_dic)

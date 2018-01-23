@@ -1,7 +1,7 @@
 
   function initMap() {
-      var recepcion_coord = {lat: -0.105258, lng: -78.503670};
-      var ceremonia_coord = {lat: -0.103386, lng: -78.500677};
+      var recepcion_coord = {lat: lat_recepcion, lng: lng_recepcion};
+      var ceremonia_coord = {lat: lat_ceremonia, lng: lng_ceremonia};
 
       var mapOtions = {
         zoom: 16,
@@ -28,8 +28,7 @@
       var recepcion_string = '<div class="info-window">' +
                 '<div class="info-content">' +
                 '<h5>Villa Vieja</h5>' +
-                '<p>José Miguel Carrión<br> y Juan Procel</p>' +
-                '<p><a href="https://waze.com/ul?ll='+recepcion_coord.lat+','+recepcion_coord.lng+'" target="blank" class="btn btn-primary">Abrir en Waze</a></p>'+
+                '<p>José Miguel Carrión<br> y Juan Procel</p>'+
                 '</div>' +
                 '</div>';
 
@@ -48,7 +47,6 @@
                 '<div class="info-content">' +
                 '<h5>Sagrada Familia</h5>' +
                 '<p>José Gonzalo Cordero<br> y Descalzi</p>'+
-                '<p><a href="https://waze.com/ul?ll='+ceremonia_coord.lat+','+ceremonia_coord.lng+'" target="blank" class="btn btn-primary">Abrir en Waze</a></p>'+
                 '</div>' +
                 '</div>';
 
