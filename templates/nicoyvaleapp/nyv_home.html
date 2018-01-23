@@ -148,7 +148,7 @@
 
     <!-- <section class="bg-primary" id="about"> -->
     <section class="padded-section">
-      <div class="container padded-div" id="mapas">
+      <div class="container" id="mapas">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <img class = "img-fluid" src="{% static "nicoyvale/img/flores.png" %}" width="340" alt="imagen flores">
@@ -156,11 +156,11 @@
             <hr class="my-4">
             <div id="map"></div>
             <br>
-            <p>
-              <a href="https://waze.com/ul?ll={{latitud_ceremonia}},{{longitud_ceremonia}}" target="blank" class="btn btn-primary">Navegar con Waze al lugar de la ceremonia</a>
+            <p class= "mb-4">
+              <a class="btn btn-primary" href="https://waze.com/ul?ll={{latitud_ceremonia}},{{longitud_ceremonia}}" target="blank">Navegar con Waze a la ceremonia</a>
             </p>
-            <p>
-              <a href="https://waze.com/ul?ll={{latitud_recepcion}},{{longitud_recepcion}}" target="blank" class="btn btn-primary">Navegar con Waze al lugar de la recepcion</a>
+            <p class= "mb-4">
+              <a class="btn btn-primary" href="https://waze.com/ul?ll={{latitud_recepcion}},{{longitud_recepcion}}" target="blank">Navegar con Waze a la recepcion</a>
             </p>
           </div>
         </div>

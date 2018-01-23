@@ -128,6 +128,12 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: var(--melon); }
 
+.btn{
+    white-space:normal !important;
+    word-wrap: break-word;
+}
+
+
 /*BARRA DE NAVEGACION*/
 
 
