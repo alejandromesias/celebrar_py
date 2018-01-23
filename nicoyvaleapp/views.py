@@ -22,6 +22,9 @@ def home(request):
     longitud_recepcion = -78.503730
     web_recepcion = "http://haciendavillavieja.com"
 
+    latitud_entrada = -0.106946
+    longitud_entrada = -78.507690
+
     context_dic = {'marquesina': marquesina,
                 'historia_parr1': historia_parr1,
                 'historia_parr2': historia_parr2,
@@ -37,6 +40,8 @@ def home(request):
                 'latitud_recepcion':latitud_recepcion,
                 'longitud_recepcion':longitud_recepcion,
                 'web_recepcion':web_recepcion,
+                'latitud_entrada':latitud_entrada,
+                'longitud_entrada':longitud_entrada,
                 }
     return render(request, 'nicoyvaleapp/nyv_home.html', context = context_dic)
 

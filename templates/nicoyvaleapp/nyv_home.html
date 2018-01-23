@@ -9,6 +9,8 @@
     var lng_ceremonia = {{longitud_ceremonia}};
     var lat_recepcion = {{latitud_recepcion}};
     var lng_recepcion = {{longitud_recepcion}};
+    var lat_entrada = {{latitud_entrada}};
+    var lng_entrada = {{longitud_entrada}};
   </script>
 
     <header class="masthead text-center text-white d-flex">
@@ -157,7 +159,12 @@
             <div id="map"></div>
             <br>
             <p class= "mb-4">
-              <a class="btn btn-primary" href="https://waze.com/ul?ll={{latitud_ceremonia}},{{longitud_ceremonia}}" target="blank">Navegar con Waze a la ceremonia</a>
+              <strong>Importante:</strong> Para llegar a la iglesia, se debe ingresar a la urbanización El Condado pero
+              NO por la entrada principal, sino por la <strong> nueva entrada de visitantes </strong> que se encuentra a unos 800 metros de la principal.
+            </p>
+
+            <p class= "mb-4">
+              <a class="btn btn-primary" href="https://waze.com/ul?ll={{latitud_entrada}},{{longitud_entrada}}" target="blank">Navegar con Waze a la nueva entrada de El Condado</a>
             </p>
             <p class= "mb-4">
               <a class="btn btn-primary" href="https://waze.com/ul?ll={{latitud_recepcion}},{{longitud_recepcion}}" target="blank">Navegar con Waze a la recepcion</a>

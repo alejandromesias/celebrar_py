@@ -1,13 +1,42 @@
 
+function place_pin(map,coordenada,titulo,parrafo){
+
+  var recepcion_marker = new google.maps.Marker({
+    position: coordenada,
+    map: map
+  });
+
+  var mensaje = '<div class="info-window">' +
+            '<div class="info-content">' +
+            '<h5>'+titulo+'</h5>' +
+            '<p>'+parrafo+'</p>'+
+            '</div>' +
+            '</div>';
+
+  var recepcion_window = new google.maps.InfoWindow({
+        content: mensaje,
+        maxWidth: 200
+  });
+
+  recepcion_window.open(map, recepcion_marker);
+
+  recepcion_marker.addListener('click', function () {
+        recepcion_window.open(map, recepcion_marker);
+  });
+
+}
+
+
   function initMap() {
       var recepcion_coord = {lat: lat_recepcion, lng: lng_recepcion};
       var ceremonia_coord = {lat: lat_ceremonia, lng: lng_ceremonia};
+      var entrada_coord = {lat: lat_entrada, lng: lng_entrada};
 
       var mapOtions = {
         zoom: 16,
         minZoom: 13,
         maxZoom: 17,
-        center: ceremonia_coord,
+        center: recepcion_coord,
 
       }
 
@@ -15,51 +44,22 @@
 
       var map = new google.maps.Map(mapCanvas, mapOtions);
 
-      var recepcion_marker = new google.maps.Marker({
-        position: recepcion_coord,
-        map: map
-      });
+      var coordenada = recepcion_coord;
+      var titulo = "Villa Vieja"
+      var parrafo = "José Miguel Carrión <br> y Juan Procel"
+      place_pin(map,coordenada,titulo,parrafo);
 
-      var ceremonia_marker = new google.maps.Marker({
-        position: ceremonia_coord,
-        map: map
-      });
+      coordenada = ceremonia_coord;
+      titulo = "Sagrada Familia"
+      parrafo = "José Gonzalo Coordero <br> y Descalzi"
+      place_pin(map,coordenada,titulo,parrafo);
 
-      var recepcion_string = '<div class="info-window">' +
-                '<div class="info-content">' +
-                '<h5>Villa Vieja</h5>' +
-                '<p>José Miguel Carrión<br> y Juan Procel</p>'+
-                '</div>' +
-                '</div>';
+      coordenada = entrada_coord;
+      titulo = "Nueva Entrada"
+      parrafo = "Entrada para visitantes a la<br>urbanización El Condado"
+      place_pin(map,coordenada,titulo,parrafo);
 
-      var recepcion_window = new google.maps.InfoWindow({
-            content: recepcion_string,
-            maxWidth: 200
-      });
 
-      recepcion_window.open(map, recepcion_marker);
-
-      recepcion_marker.addListener('click', function () {
-            recepcion_window.open(map, recepcion_marker);
-      });
-
-      var ceremonia_string = '<div class="info-window">' +
-                '<div class="info-content">' +
-                '<h5>Sagrada Familia</h5>' +
-                '<p>José Gonzalo Cordero<br> y Descalzi</p>'+
-                '</div>' +
-                '</div>';
-
-      var ceremonia_window = new google.maps.InfoWindow({
-            content: ceremonia_string,
-            maxWidth: 200
-      });
-
-      ceremonia_window.open(map, ceremonia_marker);
-
-      ceremonia_marker.addListener('click', function () {
-            ceremonia_window.open(map, ceremonia_marker);
-      });
     }
 
     google.maps.event.addDomListener(window, 'load', initMap);
