@@ -1,0 +1,165 @@
+/*
+*
+*Estilos para CelebrarProject
+*Model App A
+*Alejandro Mesias
+*/
+
+/*librería de colores*/
+
+:root {
+  --azul: #3b5c9b;
+  --melon: #ffb387;
+  --papiro: #fff4e0;
+  --blanco: #fff;
+  --melonForte: #ff9544;
+  --melonShade: rgba(137,114,100,0.3);
+
+  --azulFade: rgba(59,92,155,0.9);
+  --melonFade: rgba(244,179,135,0.9);
+  --papiroFade: rgba(255,244,244,0.9);
+  --blancoFade: rgba(255,255,255,0.9);
+
+}
+
+/* custom fonts */
+@font-face {
+  font-family: 'AmarilloFont';
+  src: url('../mvfonts/Amarillo.ttf');
+  src: url('../mvfonts/Amarillo.otf');
+}
+
+@font-face {
+  font-family: 'ChampFont';
+  src: url('../mvfonts/Champ.ttf');
+}
+
+@font-face {
+  font-family: 'ChampBoldFont';
+  src: url('../mvfonts/ChampBold.ttf');
+}
+
+/* header */
+.main-header {
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  background-image: url("../img/portada.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.header-text {
+    font-family: 'ChampFont', Tahoma ;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: var(--papiroFade);
+}
+
+
+@media (min-width: 768px) {
+  .header-text {
+      font-size: 2rem; }
+}
+@media (min-width: 992px) {
+  .main-header {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0; }
+  .header-text {
+      font-size: 3rem; }
+}
+@media (min-width: 1200px) {
+  .header-text {
+    font-size: 4rem; }
+}
+
+/* body sections */
+.padded-section-small {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.padded-section-normal {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* background colors */
+.bg-delicate {
+  background-color: var(--papiro) !important;
+}
+
+/* lineas de subrayo */
+.hr-light {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: var(--melon);
+}
+
+.hr-dark {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: var(--azul);
+}
+
+/* texto */
+/*titulos*/
+
+.section-title-light {
+  margin-top: 0;
+  color: var(--melon);
+  font-family: 'ChampBoldFont',Tahoma, Arial, sans-serif;
+}
+
+.section-title-dark {
+  margin-top: 0;
+  color: var(--azul);
+  font-family: 'ChampBoldFont',Tahoma, Arial, sans-serif;
+}
+
+/*texto*/
+
+.plain-text {
+  color: var(--azul);
+  font-size: 1.2rem;
+  font-family: Tahoma, Helvetica, Verdana;
+}
+
+.link-text {
+  color: var(--melon);
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: Tahoma, Helvetica, Verdana;
+}
+
+/* botones */
+.btn {
+  color: var(--blanco);
+  font-weight: 500;
+  letter-spacing: 2px;
+  white-space:normal !important;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  font-family: 'ChampBoldFont', 'Helvetica Neue', Arial, sans-serif; }
+
+.btn-primary {
+  background-color: var(--melon);
+  border-color: var(--melon); }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: var(--blancoFade);
+    background-color: var(--melonForte) !important; }
+  .btn-primary:active, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem var(--azul) !important; }
+
+  /*estilo para el mapa*/
+  #map {
+       width: 100%;
+       height: 550px;
+       background-color: grey;
+  }

@@ -33,10 +33,10 @@ function place_pin(map,coordenada,titulo,parrafo){
       var entrada_coord = {lat: lat_entrada, lng: lng_entrada};
 
       var mapOtions = {
-        zoom: 15,
+        zoom: 16,
         minZoom: 13,
         maxZoom: 17,
-        center: recepcion_coord,
+        center: entrada_coord,
 
       }
 
@@ -56,7 +56,7 @@ function place_pin(map,coordenada,titulo,parrafo){
 
       coordenada = entrada_coord;
       titulo = "Nueva Entrada"
-      parrafo = "Entrada para visitantes a la<br>urbanización El Condado, calle Río Peripa"
+      parrafo = "Entrada para visitantes a la<br>urbanización El Condado, calle Q y Yanacona"
       place_pin(map,coordenada,titulo,parrafo);
 
 

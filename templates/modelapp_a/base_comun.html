@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{% load app_info %}
+{% get_app_name as folder_app_name %}
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" contenst="">
+    <meta name="author" content="">
+
+    <title>Nico y Vale</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static folder_app_name|add:"/vendor/bootstrap/css/bootstrap.css" %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static folder_app_name|add:"/vendor/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="{% static folder_app_name|add:"/vendor/magnific-popup/magnific-popup.css" %}" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="{% static folder_app_name|add:"/css/custom_style.css" %}" rel="stylesheet">
+    <link href="{% static folder_app_name|add:"/css/navigation_style.css" %}" rel="stylesheet">
+
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="{% url 'home' %}">Nico y Vale</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'confirmar' %}">Confirmar asistencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'home' %}#ceremonia">Ceremonia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'home' %}#recepcion">Recepción</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'home' %}#mapas">Mapa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'home' %}#historia">Historia</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- paginas individuales -->
+    {% block page_block %}
+
+    {% endblock %}
+    <!--fin paginas individuales -->
+  </body>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static folder_app_name|add:"/vendor/jquery/jquery.min.js" %}"></script>
+  <script src="{% static folder_app_name|add:"/vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static folder_app_name|add:"/vendor/jquery-easing/jquery.easing.min.js" %}"></script>
+  <script src="{% static folder_app_name|add:"/vendor/scrollreveal/scrollreveal.min.js" %}"></script>
+  <script src="{% static folder_app_name|add:"/vendor/magnific-popup/jquery.magnific-popup.min.js" %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static folder_app_name|add:"/js/creative.min.js" %}"></script>
+  <!-- Custom scripts for this template -->
+  <script src="{% static folder_app_name|add:"/js/creative.min.js" %}"></script>
+  <script src="{% static folder_app_name|add:"/js/countdown.js" %}"></script>
+
+  <!-- Google maps api y script -->
+  <script src="{% static folder_app_name|add:"/js/gmaps.js" %}"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClBl5hSze4TqnNzGkSWMlRejzyZz93EpA&callback=initMap"></script>
+
+
+</html>

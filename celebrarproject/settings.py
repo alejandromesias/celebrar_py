@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'celebrarvip',
+    'modelapp_a',
     'nicoyvaleapp',
+
 ]
 
 MIDDLEWARE = [

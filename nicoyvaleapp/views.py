@@ -22,8 +22,8 @@ def home(request):
     longitud_recepcion = -78.503730
     web_recepcion = "http://haciendavillavieja.com"
 
-    latitud_entrada = -0.106946
-    longitud_entrada = -78.507690
+    latitud_entrada = -0.101239
+    longitud_entrada = -78.503674
 
     context_dic = {'marquesina': marquesina,
                 'historia_parr1': historia_parr1,
