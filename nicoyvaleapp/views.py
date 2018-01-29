@@ -10,7 +10,7 @@ def home(request):
     historia_parr3 = "Hace 7 meses decidimos juntar nuestras vidas para siempre y nos embarcamos en esta nueva aventura, con más retos y objetivos comunes. Estamos felices de poder compartir el inicio de esta etapa junto a quienes más queremos."
 
     nombre_ceremonia = "Parroquia La Sagrada Familia del Condado"
-    direccion_ceremonia = 'Gonzalo Cordero S/N y Ricardo Descalzi, Urb. "El Condado", Quito. La entrada de visitantes a la urbanización es por la calle Río Pereira.'
+    direccion_ceremonia = 'Gonzalo Cordero S/N y Ricardo Descalzi, Urb. "El Condado", Quito. La entrada de visitantes a la urbanización es por la calle "Q" y Yanacona'
     hora_ceremonia = "Sábado 3 de marzo, 11h30"
     latitud_ceremonia = -0.103386
     longitud_ceremonia = -78.500677
