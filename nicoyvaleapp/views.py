@@ -63,5 +63,5 @@ def confirmar_page(request):
 
 def index(request):
 
-    text = {'inserted_text': "hola texto insertadoss"}
+    text = {'inserted_text': "Hola Wlado Squarecloud"}
     return render(request, 'nicoyvaleapp/index.html', context = text)
