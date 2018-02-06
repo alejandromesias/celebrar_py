@@ -19,14 +19,14 @@ class HomeView(TemplateView):
         longitud_ceremonia = -78.500677
 
         nombre_recepcion = "Hacienda Villa Vieja"
-        direccion_recepcion = "Juan Procel y José Miguel Carrión, sector El Condado"
+        direccion_recepcion = "Río Solanga y Juan Procel, sector El Condado"
         hora_recepcion = "3 de marzo, a partir de las 13h00"
-        latitud_recepcion = -0.105258
-        longitud_recepcion = -78.503730
+        latitud_recepcion = -0.10486
+        longitud_recepcion = -78.50289
         web_recepcion = "http://haciendavillavieja.com"
 
-        latitud_entrada = -0.106946
-        longitud_entrada = -78.507690
+        latitud_entrada = -0.101239
+        longitud_entrada = -78.503674
 
         context_dic = {
                     'marquesina': marquesina,
