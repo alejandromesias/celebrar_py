@@ -16,10 +16,10 @@ def home(request):
     longitud_ceremonia = -78.500677
 
     nombre_recepcion = "Hacienda Villa Vieja"
-    direccion_recepcion = "Juan Procel y José Miguel Carrión, sector El Condado"
+    direccion_recepcion = "Río Solanga y Juan Procel, sector El Condado"
     hora_recepcion = "3 de marzo, a partir de las 13h00"
-    latitud_recepcion = -0.105258
-    longitud_recepcion = -78.503730
+    latitud_recepcion = -0.10486
+    longitud_recepcion = -78.50289
     web_recepcion = "http://haciendavillavieja.com"
 
     latitud_entrada = -0.101239
@@ -60,8 +60,3 @@ def confirmar_page(request):
                 }
 
     return render(request, 'nicoyvaleapp/confirmar_page.html', context = context)
-
-def index(request):
-
-    text = {'inserted_text': "Hola Wlado Squarecloud"}
-    return render(request, 'nicoyvaleapp/index.html', context = text)

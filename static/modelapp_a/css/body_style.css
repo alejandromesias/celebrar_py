@@ -25,7 +25,6 @@
     color: var(--papiroFade);
 }
 
-
 @media (min-width: 768px) {
   .header-text {
       font-size: 2rem; }
@@ -43,6 +42,47 @@
   .header-text {
     font-size: 4rem; }
 }
+
+
+/* alternative header*/
+
+.alt-header {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background-image: url("../img/portada2.jpg");
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.alt-header-text {
+    font-family: 'ChampFont', Tahoma ;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: var(--papiroFade);
+}
+
+@media (min-width: 768px) {
+  .alt-header-text {
+      font-size: 2rem; }
+}
+@media (min-width: 992px) {
+  .alt-header {
+    height: 50vh;
+    min-height: 350px;
+    padding-top: 0;
+    padding-bottom: 0; }
+  .alt-header-text {
+      font-size: 3rem; }
+}
+@media (min-width: 1200px) {
+  .alt-header-text {
+    font-size: 4rem; }
+}
+/* */
+
 
 /* body sections */
 .padded-section-small {

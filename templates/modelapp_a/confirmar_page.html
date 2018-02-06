@@ -3,41 +3,24 @@
 {% load staticfiles %}
 
   {% block page_block %}
-  <header class="masthead-2 text-center text-white d-flex">
+  <header class="alt-header d-flex">
     <div class="container my-auto">
-      <div class="row">
-<!--
-        <div class="col-lg-10 mx-auto">
-          <h1 class="text-uppercase">
-            <strong>gff</strong>
-          </h1>
-          <hr>
+        <div class="col-8 text-center mx-auto">
+          <p class="alt-header-text mb-0">
+            <br><br><br>
+            {{marquesina}}
+          </p>
         </div>
-      -->
-<!--
-        <div class="col-lg-8 mx-auto">
-          <p class="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-        </div>
-  -->
-      <div class="col-8 mx-auto">
-        <p class="marquesina mb-0">
-          <br><br>
-          {{marquesina}}
-        </p>
-      </div>
-
-      </div>
     </div>
   </header>
 
   <!-- <section class="bg-primary" id="about"> -->
-  <section class="padded-section-less bg-primary">
+  <section class="padded-section-small bg-delicate">
     <div class = "container">
         <div class="col-lg-12 mx-auto text-center">
-          <h2 class="section-heading-light">Formulario</h2>
-          <hr class="light my-4">
-          <p class= " mb-4 text-par">
+          <h2 class="section-title-light">Formulario</h2>
+          <hr class="hr-dark my-4">
+          <p class= " mb-4 plain-text">
             {{instrucciones1}}
             <br><br>
             {{instrucciones2}}
